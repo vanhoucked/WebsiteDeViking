@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Viking';
+    src: url(bernierregular-regular-webfont.woff);
+}
+
+div {
+    height: 600px;
+    width: 600px;
+    position: relative;
+}
+
+img {
+    width: 510px;
+    height: 368px;
+    position: relative;
+}
+
+p {
+    font-family: 'Viking';
+    font-size: 30px;
+    color: red;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}

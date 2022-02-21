@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafelreservatie - De Viking ODK</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Reservatie succesvol verzonden!</h1>
+    <div id="container">
+        <span>
+            <img src="http://devikingodk.be/logo.png" alt="">
+        </span>
+        <form action="script.php" method="post">
+            <p>Naam:<sup>*</sup></p>
+            <input type="text" name="naam" id="naam" required>
+
+            <p>E-mail:<sup>*</sup></p>
+            <input type="email" name="email" id="email" required>
+
+            <p>Telefoon:<sup>*</sup></p>
+            <input type="tel" name="telefoon" id="telefoon" required>
+
+            <p>Datum:<sup>*</sup></p>
+            <input type="date" id="date" name="date" required>
+
+            <p>Aantal personen:<sup>*</sup></p>
+            <input type="number" name="aantal" id="aantal" min="4" required>
+
+            <p>Vermoedelijk aankomstuur:<sup>*</sup></p>
+            <input type="time" name="tijd" id="tijd" required>
+
+            <p>Opmerking:</p>
+            <input type="text" name="opmerking" id="opmerking"> <br>
+
+            <input type="submit" name="submit" value="Verzenden">
+        </form>
+    </div>
+</body>
+</html>
